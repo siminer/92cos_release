@@ -334,22 +334,104 @@ ul{
 
 .status-badge{
 
-
-    padding:
-
-    6px 15px;
-
+    padding:6px 15px;
 
     border-radius:20px;
 
-
     font-size:13px;
-
 
     color:white;
 
-
     white-space:nowrap;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+}
+
+
+
+/* 检测动画 */
+
+.status-checking{
+
+    background:#9fc8ff;
+
+}
+
+
+
+.loading-icon{
+
+
+    width:12px;
+
+    height:12px;
+
+
+    border-radius:50%;
+
+
+    border:
+
+    2px solid rgba(255,255,255,.5);
+
+
+    border-top-color:white;
+
+
+    animation:
+
+    spin .8s linear infinite;
+
+
+}
+
+
+
+@keyframes spin{
+
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+
+}
+
+
+
+.check-text{
+
+
+    animation:
+
+    blink 1.2s infinite;
+
+}
+
+
+
+@keyframes blink{
+
+
+    50%{
+
+        opacity:.5;
+
+    }
 
 
 }
@@ -767,7 +849,6 @@ function updateUrlStatus(card,isAccessible){
 async function checkAllUrls(){
 
 
-
     const cards =
 
     document.querySelectorAll(
@@ -779,6 +860,38 @@ async function checkAllUrls(){
 
 
     for(const card of cards){
+
+
+
+        const badge =
+
+        card.querySelector(
+
+            ".status-badge"
+
+        );
+
+
+
+        // 开始检测动画
+
+        badge.className =
+
+        "status-badge status-checking";
+
+
+
+        badge.innerHTML = `
+
+            <span class="loading-icon"></span>
+
+            <span class="check-text">
+
+            检测中
+
+            </span>
+
+        `;
 
 
 
@@ -804,7 +917,6 @@ async function checkAllUrls(){
 
 
     }
-
 
 
 }

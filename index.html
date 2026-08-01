@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>✨ 92cos地址发布页 ✨</title>
+<title>✨ 92cos最新地址发布页 ✨</title>
+
 
 <style>
+
 
 *{
     box-sizing:border-box;
 }
 
+
 body{
+
     margin:0;
+
     min-height:100vh;
+
     font-family:
     "Microsoft YaHei",
     "Arial Rounded MT Bold",
     sans-serif;
+
 
     background:
     linear-gradient(
@@ -27,40 +37,54 @@ body{
         #d9f4ff
     );
 
+
     color:#555;
+
 }
+
 
 
 /* 顶部 */
 
+
 .header{
 
     text-align:center;
+
     padding:40px 20px 20px;
 
 }
 
 
+
 .logo{
 
     font-size:42px;
-    animation:float 3s infinite ease-in-out;
+
+    animation:
+    float 3s infinite ease-in-out;
 
 }
+
 
 
 @keyframes float{
 
     50%{
-        transform:translateY(-10px);
+
+        transform:
+        translateY(-10px);
+
     }
 
 }
 
 
+
 .title{
 
     font-size:28px;
+
     color:#ff6fae;
 
     text-shadow:
@@ -69,168 +93,19 @@ body{
 }
 
 
+
 .desc{
+
+    margin-top:10px;
 
     color:#888;
 
 }
 
 
-/* 主体 */
 
-.container{
 
-    max-width:700px;
-    margin:auto;
-
-    padding:20px;
-
-}
-
-
-
-/* 地址卡 */
-
-.url-card{
-
-    background:
-    rgba(255,255,255,.8);
-
-    border-radius:25px;
-
-    padding:18px;
-
-    margin-bottom:18px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    box-shadow:
-
-    0 10px 25px
-    rgba(255,150,200,.25);
-
-    transition:.3s;
-
-}
-
-
-.url-card:hover{
-
-    transform:
-    translateY(-5px);
-
-}
-
-
-.left{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
-}
-
-
-.icon{
-
-    width:55px;
-    height:55px;
-
-    border-radius:50%;
-
-    background:#ffe1f0;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:28px;
-
-}
-
-
-.name{
-
-    font-size:18px;
-
-    color:#ff5797;
-
-    font-weight:bold;
-
-}
-
-
-.url{
-
-    font-size:13px;
-
-    color:#999;
-
-    word-break:break-all;
-
-}
-
-
-
-.status-badge{
-
-    padding:
-
-    6px 15px;
-
-    border-radius:20px;
-
-    font-size:13px;
-
-    color:white;
-
-}
-
-
-.status-normal{
-
-    background:#7bdc9a;
-
-}
-
-
-.status-error{
-
-    background:#ff7f9d;
-
-}
-
-
-
-.disabled{
-
-    opacity:.55;
-
-    filter:grayscale(.5);
-
-}
-
-
-
-/* 底部 */
-
-.footer{
-
-    text-align:center;
-
-    padding:30px;
-
-    color:#999;
-
-}
+/* 按钮 */
 
 
 button{
@@ -241,13 +116,17 @@ button{
 
     color:white;
 
-    padding:10px 25px;
+    padding:
+    10px 25px;
+
 
     border-radius:30px;
 
     cursor:pointer;
 
     margin-top:15px;
+
+    font-size:14px;
 
 }
 
@@ -260,6 +139,313 @@ button:hover{
 
 
 
+
+/* 内容 */
+
+
+.container{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+
+
+
+ul{
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+
+
+/* 地址卡片 */
+
+
+.url-card{
+
+
+    background:
+    rgba(255,255,255,.85);
+
+
+    border-radius:25px;
+
+
+    padding:18px;
+
+
+    margin-bottom:18px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:space-between;
+
+
+
+    box-shadow:
+
+
+    0 10px 25px
+
+    rgba(255,150,200,.25);
+
+
+
+    transition:.3s;
+
+
+    text-decoration:none;
+
+
+    color:inherit;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.url-card:hover{
+
+
+    transform:
+    translateY(-5px);
+
+
+}
+
+
+
+.url-card:active{
+
+
+    transform:
+    scale(.97);
+
+
+}
+
+
+
+
+
+.left{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+.icon{
+
+
+    width:55px;
+
+
+    height:55px;
+
+
+    border-radius:50%;
+
+
+    background:#ffe1f0;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+.name{
+
+
+    font-size:18px;
+
+
+    color:#ff5797;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+.url{
+
+
+    margin-top:5px;
+
+
+    font-size:13px;
+
+
+    color:#999;
+
+
+    word-break:break-all;
+
+
+}
+
+
+
+
+/* 状态 */
+
+
+.status-badge{
+
+
+    padding:
+
+    6px 15px;
+
+
+    border-radius:20px;
+
+
+    font-size:13px;
+
+
+    color:white;
+
+
+    white-space:nowrap;
+
+
+}
+
+
+
+.status-normal{
+
+
+    background:#7bdc9a;
+
+
+}
+
+
+
+.status-error{
+
+
+    background:#ff7f9d;
+
+
+}
+
+
+
+
+.disabled{
+
+
+    opacity:.55;
+
+
+    filter:grayscale(.5);
+
+
+}
+
+
+
+
+
+/* 底部 */
+
+
+.footer{
+
+
+    text-align:center;
+
+
+    padding:30px;
+
+
+    color:#999;
+
+
+}
+
+
+
+
+@media(max-width:500px){
+
+
+    .url-card{
+
+
+        padding:15px;
+
+
+    }
+
+
+    .name{
+
+        font-size:16px;
+
+    }
+
+
+    .status-badge{
+
+
+        padding:
+
+        5px 10px;
+
+        font-size:12px;
+
+    }
+
+
+}
+
+
 </style>
 
 
@@ -269,105 +455,173 @@ button:hover{
 <body>
 
 
+
 <div class="header">
 
-    <div class="logo">🐰🌸</div>
+
+    <div class="logo">
+
+        🐰🌸
+
+    </div>
+
+
 
     <div class="title">
+
         92cos最新地址发布页
+
     </div>
+
+
 
     <div class="desc">
+
         自动检测线路状态 ✨
+
     </div>
 
+
+
     <button onclick="checkAllUrls()">
+
         🔍 立即检测
+
     </button>
 
+
+
 </div>
+
+
 
 
 
 <div class="container">
 
 
-<ul id="url-list" style="padding:0;list-style:none;">
+<ul id="url-list">
 
 
-<li class="url-card"
-    data-url="https://92cos.com">
+
+<a class="url-card"
+
+   href="https://92cos.com"
+
+   target="_blank"
+
+   data-url="https://92cos.com">
+
 
 
 <div class="left">
 
+
 <div class="icon">
+
 🌸
+
 </div>
+
 
 
 <div>
 
+
 <div class="name">
+
 主站地址
+
 </div>
+
+
 
 <div class="url">
+
 https://92cos.com
+
+</div>
+
+
+
 </div>
 
 
 </div>
 
-
-</div>
 
 
 <div class="status-badge">
+
 检测中
+
 </div>
 
 
-</li>
+
+</a>
 
 
 
 
 
-<!-- <li class="url-card"
-    data-url="https://92cos.com">
+
+<a class="url-card"
+
+   href="https://92cos.com"
+
+   target="_blank"
+
+   data-url="https://92cos.com">
+
 
 
 <div class="left">
 
+
 <div class="icon">
+
 🐱
+
 </div>
+
 
 
 <div>
 
+
 <div class="name">
+
 备用线路
+
 </div>
+
 
 
 <div class="url">
-https://www.baidu.com
+
+https://92cos.com
+
+</div>
+
+
+
 </div>
 
 
 </div>
 
-</div>
 
 
 <div class="status-badge">
+
 检测中
+
 </div>
 
 
-</li> -->
+
+</a>
 
 
 
@@ -378,89 +632,134 @@ https://www.baidu.com
 
 
 
+
+
+
 <div class="footer">
+
 
 💗 保持收藏 · 防止迷路 💗
 
+
 <br>
 
-© 2026 92cos发布页
+
+© 2026 92cos.net
+
 
 </div>
+
+
+
 
 
 
 <script>
 
 
-function checkUrl(url) {
+
+function checkUrl(url){
+
 
     return new Promise((resolve)=>{
 
 
         fetch(url,{
+
             mode:"no-cors",
+
             method:"HEAD",
+
             cache:"no-cache"
 
         })
 
+
         .then(()=>{
+
 
             resolve(true);
 
+
         })
+
 
         .catch(()=>{
 
+
             resolve(false);
+
 
         });
 
 
+
     });
+
 
 }
 
 
 
-function updateUrlStatus(li,isAccessible){
+
+
+function updateUrlStatus(card,isAccessible){
+
 
 
     const badge =
-    li.querySelector(".status-badge");
+
+    card.querySelector(".status-badge");
+
 
 
     if(isAccessible){
 
 
-        li.classList.remove("disabled");
+
+        card.classList.remove("disabled");
+
+
+        card.style.pointerEvents="auto";
+
 
 
         badge.innerHTML="🟢 正常";
 
 
         badge.className=
+
         "status-badge status-normal";
 
 
-    }else{
+
+    }
+
+    else{
 
 
-        li.classList.add("disabled");
+        card.classList.add("disabled");
+
+
+        card.style.pointerEvents="none";
+
 
 
         badge.innerHTML="🔴 无法访问";
 
 
         badge.className=
+
         "status-badge status-error";
+
 
 
     }
 
 
+
 }
+
 
 
 
@@ -468,51 +767,74 @@ function updateUrlStatus(li,isAccessible){
 async function checkAllUrls(){
 
 
-    const items =
+
+    const cards =
+
     document.querySelectorAll(
-        "#url-list li"
+
+        "#url-list .url-card"
+
     );
 
 
-    for(const li of items){
+
+    for(const card of cards){
+
 
 
         const url =
-        li.dataset.url;
+
+        card.dataset.url;
+
 
 
         const result =
+
         await checkUrl(url);
 
 
+
         updateUrlStatus(
-            li,
+
+            card,
+
             result
+
         );
 
 
     }
 
 
+
 }
 
 
 
-// 首次检测
+
+
+// 页面加载检测
 
 checkAllUrls();
 
 
-// 5分钟检测
+
+// 每5分钟检测
 
 setInterval(
+
     checkAllUrls,
+
     5*60*1000
+
 );
+
 
 
 </script>
 
 
+
 </body>
+
 </html>
